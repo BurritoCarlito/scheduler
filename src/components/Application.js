@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "components/Application.scss";
 import Appointment from "./Appointment";
-import { getAppointmentsForDay, getInterview } from "helpers/selectors";
+import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
 import { useVisualMode } from "hooks/useVisualMode";
 
 
@@ -14,10 +14,12 @@ export default function Application(props) {
   const [state, setState] = useState({
     day: "Monday",
     days: [],
-    interviewers: []
+    interviewers: {}
   });
 
   const dailyAppointments = getAppointmentsForDay(state, state.day);
+
+  const interviewers = getInterviewersForDay(state, state.day);
 
   const schedule = dailyAppointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
@@ -28,6 +30,7 @@ export default function Application(props) {
         id={appointment.id}
         time={appointment.time}
         interview={interview}
+        interviewers={interviewers}
         />
     );
   });
@@ -52,7 +55,6 @@ export default function Application(props) {
   return (
     <main className="layout">
       <section className="sidebar">
-        {/* Replace this with the sidebar elements during the "Project Setup & Familiarity" activity. */}
         <img
           className="sidebar--centered"
           src="images/logo.png"
