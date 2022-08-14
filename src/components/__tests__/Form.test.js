@@ -65,9 +65,9 @@ describe("Form", () => {
     const { getByText, queryByText } = render(
       <Form
         interviewers={interviewers}
-        onSave={jest.fn()}
-        name="Lydia Miller-Jones"
-        interviewer={interviewers[0]}
+        onSave={onSave}
+        student="Lydia Miller-Jones"
+        interviewer={interviewers[0].id}
       />
     );
     /* 3. Click the save button */
