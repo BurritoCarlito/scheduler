@@ -30,22 +30,25 @@ npm test
 npm run storybook
 ```
 
-## IMAGES
+## Preview
 
 ### Main Page Set on "Monday"
 
-!(Images/Screen Shot 2022-08-17 at 10.26.43 AM.png)
+![](https://user-images.githubusercontent.com/95609843/185206142-962ff15c-e9d3-4954-87d3-18cf557a0ed1.png)
 
 ### Able to delete appointment - Delete message confirmation 
 
-!(Images/Screen Shot 2022-08-17 at 10.26.51 AM.png)
+![](https://user-images.githubusercontent.com/95609843/185206151-300148cf-df32-4c3d-a3d0-82cb165304b3.png)
 
 ### Able to book a new appointment 
 
-!(Images/Screen Shot 2022-08-17 at 10.27.07 AM.png)
+![](https://user-images.githubusercontent.com/95609843/185206154-d0e53b91-cceb-49c8-a157-2c6acacc7e5e.png)
+![](https://user-images.githubusercontent.com/95609843/185206158-ddf5a1bd-82bb-4af3-a99c-9c8e76d68069.png)
 
-!(Images/Screen Shot 2022-08-17 at 10.27.22 AM.png)
 
 ### Able to switch to different days 
 
-!(Images/Screen Shot 2022-08-17 at 10.27.38 AM.png)
+![](https://user-images.githubusercontent.com/95609843/185206161-0f8a332d-1eaa-4162-82db-620943b0a2a0.png)
+
+
+
