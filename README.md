@@ -3,6 +3,7 @@
 ## Summary
 
 This was a interview scheduler web application that was built using React. This web application allows you to schedule, edit, delete interviews on different days with different interviewers when needed.
+It also indicates how many spots are available after deleting, creating or editing a new appointment.
 The components for the web application were built in isolation before implementation using StoryBook.
 This web application was tested using Jest and Cypress.
 
